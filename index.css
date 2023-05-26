@@ -5,6 +5,23 @@ body {
     background: #1B244A;
 }
 
+.startContainer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.startContainer button {
+    width: 200px;
+    height: 30px;
+}
+
+.startContainer p {
+    font-size: 40px;
+    font-family: cursed timer ulil;
+    margin-bottom: 0;
+    color:#F94F6D;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
@@ -48,7 +65,7 @@ h3 {
     height: 45px;
     width: 155px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 10px;
     
 }
@@ -59,4 +76,14 @@ button {
     border: solid 2px #9AABD8;
     color: #9AABD8;
     width: 40px;
+}
+
+.newGame {
+    display: flex;
+    justify-content: center;
+}
+
+.newGame button {
+    height: 45px;
+    width: 160px;
 }
