@@ -21,6 +21,12 @@ function updateTimer() {
     seconds = seconds < 10 ? "0" + seconds : seconds
     showTime.textContent = `${minutes}:${seconds} `
     time--
+    
+    //stop time at 00:00 when time is up , prevents negative time
+    if (time <= 0) {
+        clearInterval(timer)
+        showTime.textContent = "00:00"
+    }
 }
 
 //reset time once player hits new game
