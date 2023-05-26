@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div class="startContainer">
+      <button id="start-button" onclick="startTimer(),updateTimer()">
+        Start Game
+      </button>
+      <p id="show-time">12:00</p>
+    </div>
     <div class="wrapper">
       <div class="container">
         <div>
@@ -31,6 +37,10 @@
           <button onclick="addTwoGuest()">+2</button>
           <button onclick="addThreeGuest()">+3</button>
         </div>
+      </div>
+      <br />
+      <div class="newGame">
+        <button onclick="newGame(), resetTimer()">New Game</button>
       </div>
     </div>
 
